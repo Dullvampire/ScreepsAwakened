@@ -28,4 +28,8 @@ modules.exports = function () {
             enumerable: false
         });
     };
+
+    global.calculateBodyCost = function (body) {
+        return _.sum(_.map(function (part) { return BODYPART_COST[part]; }, body));
+    };
 };

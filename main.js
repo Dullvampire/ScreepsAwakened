@@ -18,6 +18,4 @@ module.exports.loop = function () {
     for (let actionName of actionList) {
         actions[actionName] = require('action.' + actionName);
     }
-
-    var role
 };
